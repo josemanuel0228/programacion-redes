@@ -17,7 +17,6 @@ url = main_api + urllib.parse.urlencode({"key": key, "from":orig, "to":dest})
 print(url)
 json_data = requests.get(url).json()
 print(json_data ['route']['sessionId'])
-
 # Estrae la distancia y el tiempo
 print (json_data['route']['time'])
 print (json_data['route']['distance'])
